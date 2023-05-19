@@ -9,6 +9,10 @@
     word-wrap: break-word;
 }
 
+.certifications ul {
+    padding: 0;
+}
+
 .certifications li a {
     text-decoration: none;
     color: gold;
