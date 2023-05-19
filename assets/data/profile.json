@@ -48,22 +48,22 @@
     "projects": [
       {
         "name": "Pokedéx",
-        "url": "https://github.com/apollohardrock/projects/tree/main/pokedex",
+        "url": "https://github.com/apollohardrock/projects/tree/c263925fbf5ee0b05d6ec8b02e83788cfbfd7879/pokedex",
         "github": true
       },
       {
-        "name": "Blog en Angular",
-        "url": "https://github.com/apollohardrock/projects/tree/main/blogs/angular-blog",
+        "name": "Blog feito com Angular",
+        "url": "https://github.com/apollohardrock/projects/tree/c263925fbf5ee0b05d6ec8b02e83788cfbfd7879/blogs/angular-blog",
         "github": true
       },
       {
         "name": "Dashboard em Angular com API em Python",
-        "url": "https://github.com/apollohardrock/projects/tree/main/dashboard/dashboard-skyglass",
+        "url": "https://github.com/apollohardrock/projects/tree/c263925fbf5ee0b05d6ec8b02e83788cfbfd7879/dashboard/dashboard-skyglass",
         "github": true
       },
       {
         "name": "WebApp para impressão de etiquetas personalizadas",
-        "url": "https://github.com/apollohardrock/projects/tree/main/skytags",
+        "url": "https://github.com/apollohardrock/projects/tree/c263925fbf5ee0b05d6ec8b02e83788cfbfd7879/skytags",
         "github": true
       }
     ],
