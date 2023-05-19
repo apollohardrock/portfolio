@@ -1,0 +1,97 @@
+{
+    "name": "Lucas Apollo",
+    "photo": "https://avatars.githubusercontent.com/u/24775402?v=4",
+    "job": "Front-End Developer",
+    "location": "Rio Grande do Sul - BR",
+    "phone": "(51) 99195-4400",
+    "email": "apollohardrock@gmail.com",
+    "skills": {
+      "hardSkills": [
+        {
+          "name": "HTML",
+          "logo": "https://raw.githubusercontent.com/apollohardrock/portfolio/main/assets/data/imgs/html.png"
+        },
+        {
+          "name": "CSS",
+          "logo": "https://raw.githubusercontent.com/apollohardrock/portfolio/main/assets/data/imgs/css.png"
+        },
+        {
+          "name": "JavaScript",
+          "logo": "https://raw.githubusercontent.com/apollohardrock/portfolio/main/assets/data/imgs/javascript.png"
+        },
+        {
+          "name": "Angular",
+          "logo": "https://raw.githubusercontent.com/apollohardrock/portfolio/main/assets/data/imgs/angular.png"
+        },
+        {
+          "name": "Python",
+          "logo": "https://raw.githubusercontent.com/apollohardrock/portfolio/main/assets/data/imgs/python.png"
+        },
+        {
+          "name": "SQLserver",
+          "logo": "https://raw.githubusercontent.com/apollohardrock/portfolio/main/assets/data/imgs/sqlserver.png"
+        }
+      ],
+      "softSkills": [
+        "Boa comunicação",
+        "Resolução de problemas",
+        "Pensamento crítico",
+        "Resiliência",
+        "Autodidatismo"
+      ]
+    },
+    "languages": [
+      "Português (BR)",
+      "Inglês (intermediário)",
+      "Espanhol (básico)"
+    ],
+    "projetos": [
+      {
+        "name": "Pokedéx",
+        "url": "https://github.com/apollohardrock/projects/tree/main/pokedex",
+        "github": true
+      },
+      {
+        "name": "Blog en Angular",
+        "url": "https://github.com/apollohardrock/projects/tree/main/blogs/angular-blog",
+        "github": true
+      },
+      {
+        "name": "Dashboard em Angular com API em Python",
+        "url": "https://github.com/apollohardrock/projects/tree/main/dashboard/dashboard-skyglass",
+        "github": true
+      },
+      {
+        "name": "WebApp para impressão de etiquetas personalizadas",
+        "url": "https://github.com/apollohardrock/projects/tree/main/skytags",
+        "github": true
+      }
+    ],
+    "certifications": [
+      {
+        "name": "Potência Tech Angular Developer - Powered by iFood | DIO",
+        "period": "apr/2023",
+        "certification": "https://www.dio.me/certificate/4687846E"
+      },
+      {
+        "name": "Formação JavaScript Developer | DIO",
+        "period": "may/2023",
+        "certification": "https://www.dio.me/certificate/A4AAB2ED"
+      },
+      {
+        "name": "Formação HTML Web Developer | DIO",
+        "period": "mar/2023",
+        "certification": "https://www.dio.me/certificate/3F1A9BC9"
+      },
+      {
+        "name": "Bootcamp Linux do Zero | DIO",
+        "period": "mar/2023",
+        "certification": "https://www.dio.me/certificate/4687846E"
+      },
+      {
+        "name": "Certificação Lean Six Sigma Yellow Belt | FM2S",
+        "period": "dez/2022",
+        "certification": "https://ead.fm2s.com.br/certificado/159472"
+      }
+    ]
+  }

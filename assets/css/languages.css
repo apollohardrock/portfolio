@@ -1,0 +1,15 @@
+.languages {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 0;
+    padding:0;
+    list-style-image: url(.././img/icons/check.svg);
+}
+
+.languages li {
+    padding: 1rem;
+    font-weight: 700;
+}
