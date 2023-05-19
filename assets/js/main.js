@@ -46,7 +46,7 @@ function updateProjects(profileData) {
         return `
             <li>
                 <h3 ${projects.github ? 'class="github"' : 'class="www"'}>${projects.name}</h3>
-                <a href="${projects.url} target="_blank">${projects.url}</a>
+                <a href="${projects.url}" target="_blank">${projects.url}</a>
             </li>
         `
     }).join('')
@@ -55,12 +55,12 @@ function updateProjects(profileData) {
 
 function updateCertifications(profileData) {
     const certifications = document.getElementById('profile.certifications')
-    certifications.innerHTML = profileData.certifications.map(projects =>{
+    certifications.innerHTML = profileData.certifications.map(certifications =>{
         return `
             <li>
                 <h3>${certifications.name}</h3>
-                <p>${certifications.period}</p>
-                <a href="${cetifications.url} target="_blank">${certifications.url}</a>
+                <p>Date: ${certifications.period}</p>
+                <a href="${certifications.url}" target="_blank">${certifications.url}</a>
             </li>
         `
     }).join('')

@@ -1,0 +1,7 @@
+.certifications li a {
+    text-decoration: none;
+    color: gold;
+}
+.certifications li a:hover {
+    text-decoration: underline;
+}

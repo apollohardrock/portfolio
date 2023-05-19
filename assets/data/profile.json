@@ -47,14 +47,9 @@
     ],
     "projects": [
       {
-        "name": "Pokedéx",
-        "url": "https://github.com/apollohardrock/projects/tree/c263925fbf5ee0b05d6ec8b02e83788cfbfd7879/pokedex",
-        "github": true
-      },
-      {
-        "name": "Blog feito com Angular",
-        "url": "https://github.com/apollohardrock/projects/tree/c263925fbf5ee0b05d6ec8b02e83788cfbfd7879/blogs/angular-blog",
-        "github": true
+        "name": "Site institucional Skyglass Canela",
+        "url": "https://skyglasscanela.com.br",
+        "github": false
       },
       {
         "name": "Dashboard em Angular com API em Python",
@@ -67,10 +62,15 @@
         "github": true
       },
       {
-        "name": "Site institucional Skyglass Canela",
-        "url": "https://skyglasscanela.com.br",
-        "github": false
-      }
+        "name": "Pokedéx",
+        "url": "https://github.com/apollohardrock/projects/tree/c263925fbf5ee0b05d6ec8b02e83788cfbfd7879/pokedex",
+        "github": true
+      },
+      {
+        "name": "Blog feito com Angular",
+        "url": "https://github.com/apollohardrock/projects/tree/c263925fbf5ee0b05d6ec8b02e83788cfbfd7879/blogs/angular-blog",
+        "github": true
+      }      
     ],
     "certifications": [
       {

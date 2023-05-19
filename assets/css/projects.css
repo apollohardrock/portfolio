@@ -6,6 +6,7 @@
     margin: 0;
     padding: 0;
     list-style: none;
+    word-wrap: break-word;
 }
 
 .portfolio li {
@@ -40,7 +41,7 @@
 
 .projects li a {
     text-decoration: none;
-    color: gold;
+    color: gold;    
 }
 
 .projects li a:hover {
