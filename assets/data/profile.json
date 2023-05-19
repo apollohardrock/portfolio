@@ -65,6 +65,11 @@
         "name": "WebApp para impressão de etiquetas personalizadas",
         "url": "https://github.com/apollohardrock/projects/tree/c263925fbf5ee0b05d6ec8b02e83788cfbfd7879/skytags",
         "github": true
+      },
+      {
+        "name": "Site institucional Skyglass Canela",
+        "url": "https://skyglasscanela.com.br",
+        "github": false
       }
     ],
     "certifications": [
