@@ -54,6 +54,16 @@ function updateProjects(profileData) {
 }
 
 function updateCertifications(profileData) {
+    const certifications = document.getElementById('profile.certifications')
+    certifications.innerHTML = profileData.certifications.map(projects =>{
+        return `
+            <li>
+                <h3>${certifications.name}</h3>
+                <p>${certifications.period}</p>
+                <a href="${cetifications.url} target="_blank">${certifications.url}</a>
+            </li>
+        `
+    }).join('')
 
 }
 
