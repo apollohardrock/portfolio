@@ -35,14 +35,25 @@ function updateSoftSkills(profileData) {
 }
 
 function updateLanguages(profileData) {
-
-}
-
-function updateCertifications(profileData) {
+    const languages = document.getElementById('profile.languages')
+    languages.innerHTML = profileData.languages.map(languages => `<li>${languages}</li>`).join('')
 
 }
 
 function updateProjects(profileData) {
+    const projects = document.getElementById('profile.projects')
+    projects.innerHTML = profileData.projects.map(projects =>{
+        return `
+            <li>
+                <h3 ${projects.github ? 'class="github"' : 'class="www"'}>${projects.name}</h3>
+                <a href="${projects.url} target="_blank">${projects.url}</a>
+            </li>
+        `
+    }).join('')
+
+}
+
+function updateCertifications(profileData) {
 
 }
 
@@ -52,6 +63,7 @@ function updateProjects(profileData) {
     updateHardSkills(profileData)
     updateSoftSkills(profileData)
     updateLanguages(profileData)
-    updateCertifications(profileData)
     updateProjects(profileData)
+    updateCertifications(profileData)
+
 })()
