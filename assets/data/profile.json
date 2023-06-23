@@ -47,6 +47,11 @@
     ],
     "projects": [
       {
+        "name": "Site institucional Clínica Francesca Friggi",
+        "url": "https://www.clinicafrancescafriggi.com.br",
+        "github": false
+      },
+      {
         "name": "Site institucional Skyglass Canela",
         "url": "https://skyglasscanela.com.br",
         "github": false
