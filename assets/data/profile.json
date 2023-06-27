@@ -33,36 +33,36 @@
         }
       ],
       "softSkills": [
-        "Boa comunicação",
-        "Resolução de problemas",
-        "Pensamento crítico",
-        "Resiliência",
-        "Autodidatismo"
+        "Good communication",
+        "Problem solving",
+        "Critical thinking",
+        "Resilience",
+        "Self-education"
       ]
     },
     "languages": [
       "Português (BR)",
-      "Inglês (intermediário)",
-      "Espanhol (básico)"
+      "English (B2)",
+      "Español (básico)"
     ],
     "projects": [
       {
-        "name": "Site institucional Clínica Francesca Friggi",
+        "name": "Institutional website Clínica Francesca Friggi",
         "url": "https://www.clinicafrancescafriggi.com.br",
         "github": false
       },
       {
-        "name": "Site institucional Skyglass Canela",
+        "name": "Institutional website Skyglass Canela",
         "url": "https://skyglasscanela.com.br",
         "github": false
       },
       {
-        "name": "Dashboard em Angular com API em Python",
+        "name": "Dashboard in Angular with API in Python",
         "url": "https://github.com/apollohardrock/projects/tree/c263925fbf5ee0b05d6ec8b02e83788cfbfd7879/dashboard/dashboard-skyglass",
         "github": true
       },
       {
-        "name": "WebApp para impressão de etiquetas personalizadas",
+        "name": "WebApp to print personalized tags",
         "url": "https://github.com/apollohardrock/projects/tree/c263925fbf5ee0b05d6ec8b02e83788cfbfd7879/skytags",
         "github": true
       },
@@ -72,7 +72,7 @@
         "github": true
       },
       {
-        "name": "Blog feito com Angular",
+        "name": "Blog made with Angular",
         "url": "https://github.com/apollohardrock/projects/tree/c263925fbf5ee0b05d6ec8b02e83788cfbfd7879/blogs/angular-blog",
         "github": true
       }      
@@ -99,7 +99,7 @@
         "url": "https://www.dio.me/certificate/4687846E"
       },
       {
-        "name": "Certificação Lean Six Sigma Yellow Belt | FM2S",
+        "name": "Lean Six Sigma Yellow Belt Certification | FM2S",
         "period": "dez/2022",
         "url": "https://ead.fm2s.com.br/certificado/159472"
       }
