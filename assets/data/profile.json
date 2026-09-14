@@ -1,0 +1,100 @@
+{
+    "name": "Lucas Apollo",
+    "photo": "https://avatars.githubusercontent.com/u/24775402?v=4",
+    "job": "Full Stack Developer | Gestor de TI | Gerente de Projetos",
+    "location": "Rio Grande do Sul - BR",
+    "phone": "(51) 99195-4400",
+    "email": "contato@lucasapollo.dev.br",
+    "skills": {
+      "hardSkills": [
+        {
+          "name": "HTML",
+          "logo": "assets/data/imgs/html.png"
+        },
+        {
+          "name": "CSS",
+          "logo": "assets/data/imgs/css.png"
+        },
+        {
+          "name": "JavaScript",
+          "logo": "assets/data/imgs/javascript.png"
+        },
+        {
+          "name": "Angular",
+          "logo": "assets/data/imgs/angular.png"
+        },
+        {
+          "name": "Python",
+          "logo": "assets/data/imgs/python.png"
+        },
+        {
+          "name": "SQLserver",
+          "logo": "assets/data/imgs/sqlserver.png"
+        },
+        {
+          "name": "PostgreSQL",
+          "logo": "assets/data/imgs/postgresql.png"
+        },
+        {
+          "name": "Debian Linux",
+          "logo": "assets/data/imgs/debian.png"
+        }
+      ],
+      "softSkills": [
+        "Good communication",
+        "Problem solving",
+        "Critical thinking",
+        "Resilience",
+        "Self-education"
+      ]
+    },
+    "languages": [
+      "Português (BR)",
+      "English (B2)",
+      "Español (básico)"
+    ],
+    "projects": [
+      {
+        "name": "Dashboard indiciativo de dados em tempo real",
+        "url": "https://dashboard.lucasapollo.dev.br",
+        "github": true
+      },
+      {
+        "name": "Portal de Ouvidoria Interna para Empresas",
+        "url": "https://ouvidoria.lucasapollo.dev.br",
+        "github": true
+      }      
+    ],
+    "certifications": [
+      {
+        "name": "Potência Tech Angular Developer - Powered by iFood | DIO",
+        "period": "apr/2023",
+        "url": "https://www.dio.me/certificate/4687846E"
+      },
+      {
+        "name": "Formação JavaScript Developer | DIO",
+        "period": "may/2023",
+        "url": "https://www.dio.me/certificate/A4AAB2ED"
+      },
+      {
+        "name": "Formação CSS Web Developer | DIO",
+        "period": "jul/2023",
+        "url": "https://www.dio.me/certificate/DC5A8519"
+      },
+      {
+        "name": "Formação HTML Web Developer | DIO",
+        "period": "mar/2023",
+        "url": "https://www.dio.me/certificate/3F1A9BC9"
+      },
+      {
+        "name": "Bootcamp Linux do Zero | DIO",
+        "period": "mar/2023",
+        "url": "https://www.dio.me/certificate/4687846E"
+      },
+      {
+        "name": "Lean Six Sigma Yellow Belt Certification | FM2S",
+        "period": "dez/2022",
+        "url": "https://ead.fm2s.com.br/certificado/159472"
+      }
+    ]
+  }

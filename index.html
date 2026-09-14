@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO: Adicionada descrição e meta tags básicas -->
+    <meta name="author" content="Lucas Apollo">
+    <meta name="description" content="Portfólio profissional de Lucas Apollo. Confira meus projetos, certificações e habilidades como desenvolvedor.">
+    <title>Portfólio | Lucas Apollo</title>
+
+    <!-- Performance: Fontes carregadas via <link> com preconnect para evitar lentidão e bloqueio de renderização -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Normalize -->
+    <link rel="stylesheet" 
+          href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" 
+          integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" 
+          crossorigin="anonymous" referrerpolicy="no-referrer" 
+    />
+    
+    <!-- CSS Principal -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+    <main class="main">
+        <header class="header">
+            <!-- Acessibilidade: O alt foi melhorado para não ser genérico -->
+            <img src="./assets/img/profile-photo.jpeg" alt="Foto de Lucas Apollo" class="photo" id="profile-photo">
+    
+            <h1 class="title">
+                Hello, <br>
+                I am <span class="title" id="profile-name">Loading...</span>
+            </h1>
+    
+            <!-- Semântica: Utilizada a tag <address> para dados de contato em vez de uma div comum -->
+            <address class="information" style="font-style: normal;">
+                <p class="job" id="profile-job">Loading...</p>
+                <p class="location" id="profile-location">Loading...</p>
+                <p class="phone">
+                    <a href="tel:" id="profile-phone">Loading...</a>
+                </p>
+                <p class="email">
+                    <a href="mailto:" id="profile-email">Loading...</a> 
+                </p>
+            </address>        
+        </header>
+
+        <section class="acordeon">
+            <!-- Acessibilidade: aria-expanded avisa aos leitores de tela que o conteúdo pode ser expandido -->
+            <button class="trigger" type="button" aria-expanded="false" aria-controls="content-skills">
+                Skills
+            </button>
+            <div class="content" id="content-skills">
+                <div class="skills">
+                    <section class="hard">
+                        <h3>Hard Skills</h3>
+                        <ul id="profile-skills-hardskills"></ul>
+                    </section>
+                    <section class="soft">
+                        <h3>Soft Skills</h3>
+                        <ul id="profile-skills-softskills"></ul>
+                    </section>
+                </div>
+            </div>
+        </section>
+
+        <section class="acordeon">
+            <button class="trigger" type="button" aria-expanded="false" aria-controls="content-languages">
+                Languages
+            </button>
+            <div class="content" id="content-languages">
+                <ul class="languages" id="profile-languages"></ul>                
+            </div>
+        </section>
+
+        <section class="acordeon">
+            <button class="trigger" type="button" aria-expanded="false" aria-controls="content-projects">
+                Projects
+            </button>
+            <div class="content" id="content-projects">
+                <ul class="projects" id="profile-projects"></ul>                
+            </div>
+        </section>
+
+        <section class="acordeon">
+            <button class="trigger" type="button" aria-expanded="false" aria-controls="content-certifications">
+                Certifications
+            </button>
+            <div class="content" id="content-certifications">
+                <ul class="certifications" id="profile-certifications"></ul>             
+            </div>
+        </section>
+
+    </main>
+
+    <!-- JS Principal -->
+    <script src="./assets/js/script.js"></script>
+    
+</body>
+</html>

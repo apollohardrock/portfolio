@@ -1,0 +1,319 @@
+/* ==========================================================================
+   1. VARIÁVEIS (Cores, Fontes e Configurações Globais)
+   ========================================================================== */
+:root {
+    /* Cores Principais */
+    --color-primary: gold;
+    --color-secondary: goldenrod;
+    
+    /* Background Gradient */
+    --bg-gradient-start: rgb(41, 27, 168);
+    --bg-gradient-mid: rgb(0, 0, 0);
+    --bg-gradient-end: rgb(150, 32, 32);
+    
+    /* Acordeon */
+    --acordeon-hover-bg: #75757570;
+    --acordeon-hover-border: #abc2e0;
+    
+    /* Fontes */
+    --font-primary: 'Roboto Mono', monospace;
+    --font-secondary: 'Bruno Ace', cursive;
+}
+
+/* ==========================================================================
+   2. RESET E ESTILOS GERAIS
+   ========================================================================== */
+* {
+    box-sizing: border-box;
+    font-family: var(--font-primary);
+}
+
+body {
+    background-image: linear-gradient(to bottom right, var(--bg-gradient-start), var(--bg-gradient-mid), var(--bg-gradient-end));
+    color: var(--color-primary);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* ==========================================================================
+   3. ESTRUTURA PRINCIPAL (Layout)
+   ========================================================================== */
+.main {
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid var(--color-secondary);
+    border-radius: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+    .main {
+        max-width: 1024px;
+        margin: 1rem auto;
+    }
+}
+
+/* ==========================================================================
+   4. COMPONENTES
+   ========================================================================== */
+
+/* --- 4.1 Header --- */
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header .photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.header .title {
+    text-align: center;
+    font-family: var(--font-secondary);
+    font-size: x-large;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    font-style: normal; /* Sobrescreve o itálico padrão da tag <address> */
+}
+
+.information p {
+    margin: .5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.125rem;
+}
+
+.information p a {
+    text-decoration: none;
+    color: var(--color-primary);
+}
+
+.information p::before {
+    content: '';
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: .5rem;
+}
+
+.information .job::before {
+    background-image: url(../img/icons/job.svg);
+}
+.information .location::before {
+    background-image: url(../img/icons/location.svg);
+}
+.information .phone::before {
+    background-image: url(../img/icons/phone.svg);
+}
+.information .email::before {
+    background-image: url(../img/icons/email.svg);
+}
+
+@media only screen and (min-width: 768px) {
+    .header {
+        display: grid;
+        grid-template-areas: 
+            "photo title"
+            "photo information"
+        ;
+    }
+    .header .photo {
+        grid-area: photo;
+        margin: 0 auto;
+    }
+    .header .title {
+        grid-area: title;
+        text-align: start;        
+    }
+    .header .information {
+        grid-area: information;
+    }
+}
+
+/* --- 4.2 Acordeon --- */
+.acordeon {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 1rem 0;
+    border: 1px solid var(--color-primary);
+    border-radius: 1rem;
+    transition: .25s;
+}
+
+.acordeon.open,
+.acordeon:hover {
+    background-color: var(--acordeon-hover-bg);
+    border-color: var(--acordeon-hover-border);
+}
+
+.acordeon .trigger {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 1rem 2rem;
+    background-color: transparent;
+    color: var(--color-primary);
+    border: none;
+}
+
+.acordeon .trigger:hover {
+    cursor: pointer;
+}
+
+.acordeon .trigger::after {
+    content: '';
+    width: 1.5rem;
+    height: 1.5rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../img/icons/arrow.svg);
+    transition: .25s;
+}
+
+.acordeon.open .trigger::after {
+    transform: rotate(180deg);
+}
+
+.acordeon .content {
+    overflow: hidden;
+    height: 0;
+}
+
+.acordeon.open .content {
+    display: block;
+    height: 100%;
+    padding: 0 1rem 1rem 2rem;
+}
+
+/* --- 4.3 Skills --- */
+.skills {
+    display: flex;
+    flex-direction: column;
+}
+
+.skills .hard ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.skills .hard ul li img {
+    max-width: 45px;
+    margin: 0 .5rem;
+}
+
+@media only screen and (min-width: 768px) {
+    .skills {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* --- 4.4 Languages --- */
+.languages {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style-image: url(../img/icons/check.svg);
+}
+
+.languages li {
+    padding: 1rem;
+    font-weight: 700;
+}
+
+/* --- 4.5 Projects --- */
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    word-wrap: break-word;
+}
+
+/* Correção: Alterado de .portfolio li para .projects li */
+.projects li {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 1rem 0;
+}
+
+.projects li h3.github::before {
+    content: "";
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../img/icons/github.svg);
+    margin-right: .5rem;
+}
+
+.projects li h3.www::before {
+    content: "";
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../img/icons/www.svg);
+    margin-right: .5rem;
+}
+
+.projects li a {
+    text-decoration: none;
+    color: var(--color-primary);    
+}
+
+.projects li a:hover {
+    text-decoration: underline;
+}
+
+/* --- 4.6 Certifications --- */
+.certifications {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    word-wrap: break-word;
+}
+
+.certifications li a {
+    text-decoration: none;
+    color: var(--color-primary);
+}
+
+.certifications li a:hover {
+    text-decoration: underline;
+}
