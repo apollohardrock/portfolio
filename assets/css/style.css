@@ -2,20 +2,20 @@
    1. VARIÁVEIS (Cores, Fontes e Configurações Globais)
    ========================================================================== */
 :root {
-    /* Cores Principais */
-    --color-primary: gold;
-    --color-secondary: goldenrod;
+    /* Cores Principais - Inovação e Tecnologia */
+    --color-primary: #00d2ff;     /* Ciano vibrante/neon para textos, ícones e destaques */
+    --color-secondary: #3a86ff;   /* Azul royal tecnológico para bordas e elementos secundários */
     
-    /* Background Gradient */
-    --bg-gradient-start: rgb(41, 27, 168);
-    --bg-gradient-mid: rgb(0, 0, 0);
-    --bg-gradient-end: rgb(150, 32, 32);
+    /* Background Gradient - Fundo escuro profundo para contraste tech */
+    --bg-gradient-start: #0f172a; /* Slate dark profundo */
+    --bg-gradient-mid: #020617;   /* Quase preto, no centro */
+    --bg-gradient-end: #1e1b4b;   /* Roxo/Índigo muito escuro nas bordas */
     
     /* Acordeon */
-    --acordeon-hover-bg: #75757570;
-    --acordeon-hover-border: #abc2e0;
+    --acordeon-hover-bg: rgba(0, 210, 255, 0.1); /* Fundo ciano suave transparente ao passar o mouse */
+    --acordeon-hover-border: #00d2ff;            /* Borda iluminada em ciano */
     
-    /* Fontes */
+    /* Fontes (Mantidas as originais, pois já combinam perfeitamente com o tema tech) */
     --font-primary: 'Roboto Mono', monospace;
     --font-secondary: 'Bruno Ace', cursive;
 }
@@ -74,6 +74,90 @@ body {
     text-align: center;
     font-family: var(--font-secondary);
     font-size: x-large;
+}
+
+/* --- Estilos do texto da Bio (Sobre Mim) --- */
+#profile-bio {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #e2e8f0; /* Cor clara para não cansar a leitura no fundo escuro */
+}
+
+#profile-bio p {
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+#profile-bio .bio-list {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0;
+}
+
+#profile-bio .bio-list li {
+    margin-bottom: 1.2rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+/* Seta tecnológica no lugar das bolinhas da lista */
+#profile-bio .bio-list li::before {
+    content: "►"; 
+    color: var(--color-primary);
+    position: absolute;
+    left: 0;
+    top: 2px;
+    font-size: 0.9rem;
+}
+
+/* Destaca o texto antes dos dois-pontos (ex: Segurança, Redes e Ativos:) */
+#profile-bio .bio-list li strong {
+    color: var(--color-primary);
+}
+
+/* --- 4.3 Skills (Melhoradas) --- */
+.skills {
+    display: flex;
+    flex-direction: column;
+}
+
+.skills .hard ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem; /* Adiciona um espaço uniforme entre os ícones */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Novo estilo tipo "Card" para as tecnologias */
+.skills .hard ul li {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid var(--color-secondary);
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+/* Efeito Hover brilhante e flutuante */
+.skills .hard ul li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px var(--acordeon-hover-border);
+    border-color: var(--color-primary);
+    cursor: pointer;
+}
+
+.skills .hard ul li img {
+    max-width: 45px;
+    margin: 0;
+    /* Adiciona um leve brilho no próprio ícone */
+    filter: drop-shadow(0 0 2px var(--color-primary)); 
 }
 
 .information {
@@ -200,27 +284,6 @@ body {
     padding: 0 1rem 1rem 2rem;
 }
 
-/* --- 4.3 Skills --- */
-.skills {
-    display: flex;
-    flex-direction: column;
-}
-
-.skills .hard ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.skills .hard ul li img {
-    max-width: 45px;
-    margin: 0 .5rem;
-}
 
 @media only screen and (min-width: 768px) {
     .skills {

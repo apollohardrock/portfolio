@@ -36,6 +36,48 @@ function updateProfileInfo(profileData) {
     const email = document.getElementById('profile-email');
     email.innerText = profileData.email;
     email.href = `mailto:${profileData.email}`;
+    
+    const bio = document.getElementById('profile-bio');
+    if(profileData.bio && bio) {
+        // Divide o texto onde tem quebra de linha (\n)
+        const lines = profileData.bio.split('\n');
+        let formattedBio = '';
+        let hasList = false;
+
+        lines.forEach(line => {
+            let currentLine = line.trim();
+            
+            // Se a linha começar com '+', transforma em lista
+            if (currentLine.startsWith('+')) {
+                if (!hasList) {
+                    formattedBio += '<ul class="bio-list">';
+                    hasList = true;
+                }
+                
+                let text = currentLine.substring(1).trim(); // Remove o sinal de '+'
+                
+                // Se houver dois-pontos na frase, deixa o título em negrito
+                if(text.includes(':')) {
+                    const parts = text.split(':');
+                    text = `<strong>${parts[0]}:</strong>${parts.slice(1).join(':')}`;
+                }
+                
+                formattedBio += `<li>${text}</li>`;
+            } else {
+                if (hasList) {
+                    formattedBio += '</ul>';
+                    hasList = false;
+                }
+                formattedBio += `<p>${currentLine}</p>`;
+            }
+        });
+        
+        if (hasList) formattedBio += '</ul>';
+
+        // Usa innerHTML ao invés de innerText para renderizar as tags de formatação
+        bio.innerHTML = formattedBio; 
+    }
+
 }
 
 function updateHardSkills(profileData) {
@@ -91,12 +133,16 @@ function initAccordion() {
             const acordeon = trigger.parentElement;
             const isOpen = acordeon.classList.contains('open');
 
-            if (isOpen) {
-                acordeon.classList.remove('open');
-                trigger.setAttribute('aria-expanded', 'false'); // Atualiza a acessibilidade
-            } else {
+            // Passo 1: Fecha todos os acordeões e reseta a acessibilidade
+            acordeonTriggers.forEach((otherTrigger) => {
+                otherTrigger.parentElement.classList.remove('open');
+                otherTrigger.setAttribute('aria-expanded', 'false');
+            });
+
+            // Passo 2: Se o acordeon clicado estava fechado, abre ele
+            if (!isOpen) { 
                 acordeon.classList.add('open');
-                trigger.setAttribute('aria-expanded', 'true'); // Atualiza a acessibilidade
+                trigger.setAttribute('aria-expanded', 'true');
             }
         });
     });

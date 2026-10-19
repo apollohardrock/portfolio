@@ -5,6 +5,9 @@
     "location": "Rio Grande do Sul - BR",
     "phone": "(51) 99195-4400",
     "email": "contato@lucasapollo.dev.br",
+
+    "bio": "Profissional de Tecnologia da Informação com sólida experiência em coordenação de infraestrutura, redes e sistemas de missão crítica.\nAtuo na liderança técnica de equipes, garantindo a continuidade operacional e conectando a tecnologia aos objetivos estratégicos do negócio.\nMinhas principais frentes de atuação e entregas incluem:\n+ Arquitetura e Infraestrutura de Automação: Concepção e implantação end-to-end de redes de autoatendimento (totens self-service) em ambiente Linux (Debian), rodando sistemas de PDV customizados integrados.\n+ Engenharia de Dados e Business Intelligence: Desenvolvimento e manutenção de ecossistemas analíticos, incluindo dashboards web dinâmicos alimentados por APIs em Python conectados a bancos de dados SQL Server, transformando dados brutos em inteligência para a tomada de decisão gerencial.\n+ Segurança, Redes e Ativos: Gestão avançada de infraestrutura de rede, cabeamento estruturado, links de alta velocidade, segurança perimetral e monitoramento proativo de ambientes corporativos.\n+ Governança, Compliance e Ativos Digitais: Atuação estratégica na defesa do patrimônio digital da empresa, liderando com sucesso disputas administrativas complexas de propriedade intelectual e recuperação de domínios corporativos.\nMeu perfil une a visão tática e de gestão de um coordenador de TI com a capacidade de execução sênior em infraestrutura e desenvolvimento, focado sempre em eficiência operacional, segurança e inovação estruturada.",
+    
     "skills": {
       "hardSkills": [
         {
@@ -38,14 +41,26 @@
         {
           "name": "Debian Linux",
           "logo": "assets/data/imgs/debian.png"
+        },
+        {
+          "name": "Zabbix",
+          "logo": "assets/data/imgs/zabbix.svg"
+        },
+        {
+          "name": "Mikrotik",
+          "logo": "assets/data/imgs/mikrotik.png"
+        },
+        {
+          "name": "Unifi",
+          "logo": "assets/data/imgs/unifi.png"
         }
       ],
       "softSkills": [
-        "Good communication",
-        "Problem solving",
-        "Critical thinking",
-        "Resilience",
-        "Self-education"
+        "Visão Sistêmica de Ponta a Ponta",
+        "Automação e Engenharia de Eficiência",
+        "Orquestração de Migrações e Operações Críticas",
+        "Atenção Microanalítica a Detalhes e Segurança",
+        "Integração de Sistemas Híbridos e Inovação Prática"
       ]
     },
     "languages": [
@@ -55,15 +70,25 @@
     ],
     "projects": [
       {
-        "name": "Dashboard indiciativo de dados em tempo real",
+        "name": "Dashboard indicativo de dados em tempo real",
         "url": "https://dashboard.lucasapollo.dev.br",
-        "github": true
+        "github": false
       },
       {
         "name": "Portal de Ouvidoria Interna para Empresas",
         "url": "https://ouvidoria.lucasapollo.dev.br",
+        "github": false
+      },
+      {
+        "name": "Renomeador de arquivos PDF em lote",
+        "url": "https://github.com/apollohardrock/renameFiles",
         "github": true
-      }      
+      },
+      {
+        "name": "Automatizador de Borderô de Guias, Parceiros e Vendedores",
+        "url": "https://github.com/apollohardrock/bordero",
+        "github": true
+      }
     ],
     "certifications": [
       {
@@ -97,4 +122,4 @@
         "url": "https://ead.fm2s.com.br/certificado/159472"
       }
     ]
-  }
+}
