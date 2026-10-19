@@ -1,28 +1,42 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script defer src="https://www.googletagmanager.com/gtag/js?id=G-7GYZJ3TGK1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-7GYZJ3TGK1');
+    </script>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- SEO: Adicionada descrição e meta tags básicas -->
+    <!-- SEO Principal -->
+    <title>Lucas Apollo | Full Stack Developer & Gestor de TI</title>
+    <meta name="description" content="Portfólio de Lucas Apollo. Profissional de Tecnologia com experiência em desenvolvimento Full Stack, infraestrutura de redes, sistemas Linux e gestão de projetos.">
+    <meta name="keywords" content="Lucas Apollo, Desenvolvedor Full Stack, Gestor de TI, Gerente de Projetos, Infraestrutura, Linux, Python, Desenvolvedor Rio Grande do Sul">
     <meta name="author" content="Lucas Apollo">
-    <meta name="description" content="Portfólio profissional de Lucas Apollo. Confira meus projetos, certificações e habilidades como desenvolvedor.">
-    <title>Portfólio | Lucas Apollo</title>
+    <link rel="canonical" href="https://lucasapollo.dev.br" />
 
-    <!-- Performance: Fontes carregadas via <link> com preconnect para evitar lentidão e bloqueio de renderização -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Open Graph / Redes Sociais (LinkedIn, WhatsApp) -->
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="Lucas Apollo | Profissional de Tecnologia">
+    <meta property="og:url" content="https://lucasapollo.dev.br/">
+    <!-- Certifique-se de que o caminho da imagem está correto -->
+    <meta property="og:image" content="https://lucasapollo.dev.br/assets/img/profile-photo.jpeg"> 
+    <meta property="og:description" content="Confira meus projetos em Engenharia de Dados, Infraestrutura, e Desenvolvimento Full Stack.">
+    <meta property="profile:first_name" content="Lucas">
+    <meta property="profile:last_name" content="Apollo">
+
+    <!-- Performance e Estilos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
-
-    <!-- Normalize -->
-    <link rel="stylesheet" 
-          href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" 
-          integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" 
-          crossorigin="anonymous" referrerpolicy="no-referrer" 
-    />
-    
-    <!-- CSS Principal -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
@@ -30,7 +44,7 @@
     <main class="main">
         <header class="header">
             <!-- Acessibilidade: O alt foi melhorado para não ser genérico -->
-            <img src="./assets/img/profile-photo.jpeg" alt="Foto de Lucas Apollo" class="photo" id="profile-photo">
+            <img src="./assets/img/profile-photo.webp" alt="Foto de Lucas Apollo" class="photo" id="profile-photo" width="200" height="200">
     
             <h1 class="title">
                 Hello, <br>
@@ -39,8 +53,7 @@
     
             <!-- Semântica: Utilizada a tag <address> para dados de contato em vez de uma div comum -->
             <address class="information" style="font-style: normal;">
-                <p class="job" id="profile-job">Loading...</p>
-                <p class="location" id="profile-location">Loading...</p>
+                <h2 class="job" id="profile-job" style="font-size: 1.125rem; font-weight: normal; margin: .5rem 0;">Loading...</h2>                <p class="location" id="profile-location">Loading...</p>
                 <p class="phone">
                     <a href="tel:" id="profile-phone">Loading...</a>
                 </p>
@@ -109,7 +122,24 @@
     </main>
 
     <!-- JS Principal -->
-    <script src="./assets/js/script.js"></script>
-    
+    <script defer src="./assets/js/script.js"></script>
+   
+    <!-- SEO: Rich Snippets para o Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Lucas Apollo",
+      "jobTitle": "Full Stack Developer & Gestor de TI",
+      "url": "https://lucasapollo.dev.br",
+      "image": "https://lucasapollo.dev.br/assets/img/profile-photo.jpeg",
+      "sameAs": [
+        "https://github.com/apollohardrock",
+        "COLOQUE_O_LINK_DO_SEU_LINKEDIN_AQUI"
+      ],
+      "knowsAbout": ["Web Development", "Gestão de TI", "Infraestrutura de Redes", "Linux", "Python", "Angular"]
+    }
+    </script>
+
 </body>
 </html>
